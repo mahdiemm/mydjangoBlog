@@ -1,0 +1,26 @@
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="uft-8">
+    <title>
+        {% block title %}
+        
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h2><a href="{% url 'article:list' %}">LOGO</a></h2>
+    <div class="wrapper">
+
+
+        {% block content %}
+
+    {% endblock %}
+
+    </div>
+
+    
+
+</body>
+</html>
